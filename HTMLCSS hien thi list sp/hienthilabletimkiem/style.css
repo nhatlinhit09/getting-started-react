@@ -6,35 +6,34 @@
 .container{
     margin: 20px; 
     background: none;
-    text-align: center;
-    justify-content: center;
-    border-radius: 20px;
-    font-size: 10px;
-    color: rgb(1, 7, 7);
+    text-align: center; 
+    /* float: left; */
+    /* justify-content: center; */
+    /* border-radius: 20px; */
+    font-size: 10px; 
+    /* color: rgb(1, 7, 7); */
     /* box-sizing: border-box; */
   
 }
 .border1{
-    /* margin-left: 30px; */
-    margin: 10px 10px 20px 20px; 
-    /* margin-bottom: 10px; */
+    float: left;
+    margin-right: 14px;
     display: flex;
-    float: left;
-    border-style: solid;
+    flex-wrap: wrap;
+    /* margin-left: 30px; */
+    /* margin: 10px 10px 20px 20px;  */
+    /* margin-bottom: 10px; */
+    /* display: flex;
+    float: left; */
+    /* border-style: solid;
     border-radius: 30px;
-    border-width: 1px;
-    font-size: 20px;
-    color:black;
-}
-.box2{
-    float: left;
-}
-/* .box3{
-    /* float: left;
-    display: flex; */
+    border-width: 1px; */
+    /* font-size: 20px;
+    color:black; */
+    display: flex; 
     /* margin-top: 20px;
     margin-left: 20px; */
-
+}
 h7{
     text-size-adjust: 10px;
     text-align: left;
@@ -44,8 +43,12 @@ h7{
 }
 label{
     display: flex;
-    width: 200px;
-    height: 35px;
+    border: 1px solid;
+    border-width: 1px;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 10px 10px;
     align-items: center;
     justify-content: center;
 }

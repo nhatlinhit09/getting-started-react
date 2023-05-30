@@ -39,16 +39,16 @@ a {
     border-radius: 20px;
     cursor: pointer;
     padding-top: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 5px 10px rgba(212, 9, 9, 0.89);
     /*vien box*/
     transition: .4s;
     /*toc do hieu ung*/
-    background: rgb(228, 222, 222);
+    background: white;
 
 }
 
 .content:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(233, 14, 14, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translate(0px, -8px);
     /*hieu ung khi tro chuot vao form di chuyen len xuong*/
 }
@@ -68,10 +68,9 @@ p {
 }
 
 h6 {
-    font-size: 26px;
+    font-size: 25px;
     text-align: center;
-    color: rgb(23, 182, 18);
-    margin: 0;
+    color: red;
 }
 
 ul {
@@ -111,18 +110,22 @@ button {
     font-size: 24px;
     color: white;
     /* background-color: rgb(153, 25, 47); */
-    width: 100%;
+    width: 80%;
     padding: 15px;
     border: 0;
     outline: none;
     cursor: pointer;
     margin-top: 5px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    /* border-bottom-right-radius: 20px; */
+    /* border-bottom-left-radius: 20px; */
 }
-
+h5{
+    text-decoration: line-through;
+    font-size: 25px;
+    margin-top:5px;
+}
 .buy-1 {
-    background:#e8ebec  ;
+    background:green ;
 }
 .buy-2{
     background: white;

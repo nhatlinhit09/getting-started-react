@@ -14,37 +14,25 @@ body{
     height: 600px;
     display: flex;
     background: white;
-    /* justify-content:right ; */
     border-radius: 30px;
 }
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
 .input-container {
-  /* display: -ms-flexbox; IE10 */
   display: flex;
-  /* width: 100%; */
-    /* justify-items: right;
-    justify-content: left; */
-  /* justify-content: right; */
   margin-bottom: 15px;
 }
 
 .icon {
   padding: 20px;
-  /* background: rgb(5, 105, 206); */
   background-image: url('icon.png');
   background-size: cover;
-    
-  /* color: rgb(218, 19, 19); */
-  /* min-width: 50px;
-  text-align: center; */
 }
 
 .input-field {
   width: 100%;
   padding: 10px;
-  
   outline:10px;
 }
 
@@ -52,7 +40,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: 2px solid rgb(36, 95, 155);
 }
 
-/* Set a style for the submit button */
 .btn {
   background-color: rgb(10, 224, 82);
   color: white;
@@ -69,21 +56,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
   opacity: 1;
 }
 
-/* .input-with-image {
-    position: relative;
-}
-
-.input-with-image input[type="text"] {
-    padding-left: 40px; /* Để tránh che phủ hình ảnh */
-/* }
-.input-with-image::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url('search.jpeg');
-    background-size: cover;
-} */ 

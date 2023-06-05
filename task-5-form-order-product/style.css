@@ -1,0 +1,404 @@
+
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background: #f0f0f0;
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+.listing-cart .product-item .infosp{
+    display: block;
+    margin-left: 95px;
+}
+.ankhang .cancel-order>a {
+    color: #666;
+    margin: 2px 0 0 20px;
+    width: 40px;
+}
+.listing-cart {
+    list-style: none;
+    display: flex;
+    height: 190px;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    box-shadow: 0 4px gainsboro;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+.cancel-order{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+.bn-xoa{
+    color: #666;
+    margin: 2px 0 0 20px;
+    width: 40px;
+    background: #f1f1f1;
+    display: block;
+    overflow: hidden;
+    margin: 10px auto 0;
+}
+.ankhang{
+    width: 791px;
+    margin: auto;
+    padding: 23px 40px; 
+    background:white;
+    border-radius: 5px;
+    box-shadow: gray 0px 0px 8px;
+}
+.middleCard{
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 18px rgba(0,0,0,.12);
+    border-radius: 2px;
+}
+.listing-cart .product-item .imgsp {
+    float: left;
+    width: 16%; 
+}
+.imgsp{
+    width: 90px;
+    float: left;
+}
+.listing-cart .name-price span {
+    float: right;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom:2px;
+}
+.listing-cart .product-item {
+    display: block;
+    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;}
+
+.ankhang.listing-cart .product-item:first-child{
+        padding-top: 30px;
+    }
+ul{
+    list-style: none;
+}
+   img.lazyloaded{
+    opacity: 1;
+   }
+   .ankhang .listing-cart .imgsp a img{
+    display: block;
+    overflow: hidden;
+    width: 78px;
+    
+   }
+   .ankhang .listing-cart .name-price span {
+    color: #222;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+
+
+
+#app img.lazyloaded {
+    opacity: 1;
+}
+.ankhang .listing-cart .imgsp a img {
+    display: block;
+    overflow: hidden;
+    width: 78px;
+   
+}
+.listing-cart .imgsp a img {
+    width: 75px;
+    
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 75px;
+    width: 75px;
+}
+
+.promotionName a {
+    overflow: hidden;
+    color: #288ad6;
+    padding: 5px 0 0;
+}
+img {
+    border: 0;
+}
+.choosenumber{
+    text-align: center;
+    width:99px;
+    background: #fff;
+    border-radius: 3px;
+    line-height: 30px;}
+
+.minus{
+    border-radius: 2px;
+    float: left;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    
+     cursor: pointer; 
+}
+.plus{
+    border-radius: 2px;
+    float: left;
+    border: 1px solid #dfdfdf;
+    /* background: #fff; */
+    width: 24px;
+    height: 24px;
+    position: relative;
+     /* pointer-events: none;  */
+     cursor: pointer; 
+}
+.number{
+    border: none;
+    width: 24px;
+    float: left;
+    border-radius: 4px;
+    height: 24px;
+    line-height: 22px;
+    background: #f5f5f7;
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 0;
+}
+.choosenumber>input[type="text"]:focus +:checked{
+    background-color:rgb(161, 184, 34);
+}
+.choosetotle{
+    display: flex;
+    justify-content: space-between;
+}
+.sex-customer{
+font-size: 14px;
+margin: 0;
+
+
+}
+.info-customer{
+
+overflow: hidden;
+padding: 15px 30px 10px;
+box-shadow: 0px 4px gainsboro;
+}
+  input[type="radio"]:checked {
+     transform: scale(0.7); 
+    box-shadow: 0 0 0 5px white, 0 0 0 5px #241e20;
+    appearance: none; 
+    background-color: #0ef50e;
+    margin: 0;
+    padding: 6px ;
+    width: 1.15em;
+    box-sizing: border-box;
+    height: 1.15em;
+    border: 1px none solid; 
+    border-radius: 50%;
+ } 
+
+ /* input[name="color"]:checked {
+    accent-color: green;
+ } */
+
+  /* .fillinform  > input[type="text"]{
+    
+    font-size: 14px;;
+     height: 40px; 
+     width: 262px; 
+     padding: 6px ;
+     transition: (0.7);
+     border-radius: 4px;
+ 
+ } */
+ 
+ .hoten-text-1 >input[type="text"]:focus{
+    border: #3de058 1px solid;
+ }
+
+ .hoten-text-1 >input[type="text"]{
+    font-size: 14px;;
+     height: 40px; 
+     width: 262px; 
+     outline: 10px;
+     padding: 6px ;
+     border-radius: 4px;
+     box-sizing: border-box;
+     border: 1px solid #d1d1d1;
+ }
+ .choosegetgoods{
+    list-style: none;
+
+    overflow: hidden;
+    padding: 15px 30px 10px;
+    
+    box-shadow: 0 4px gainsboro;
+    margin-bottom: 25px;
+    
+ }
+.click-choose > input[type="text"],select{ 
+    padding: 6px ;
+    font-size: 14px;;
+     height: 40px; 
+     width: 262px; 
+     transition: (0.7);
+     border-radius: 4px;
+     border:1px solid #d1d1d1;
+ }
+ .chonpthtt-1 :focus{
+    border: #3de058 1px solid;
+    
+ }
+ .chonpthtt-1 > input[type="text"]
+ { 
+    padding: 6px ;
+    font-size: 14px;;
+     height: 40px; 
+     outline: 10px;
+     width: 262px; 
+     transition: (0.7);
+     border-radius: 4px;
+     border:1px solid #d1d1d1;
+ }
+ .chontinhthanh{
+    background-color: #f1ecec;
+    padding: 20px 0px 10px 20px;
+ }
+ .chonghichu{
+    
+ }
+ .chonghichu > input[type="text"]:focus{
+    border: #3de058 1px solid;
+ }
+
+  .chonghichu  > input[type="text"]{
+    margin-top: 20px;
+    padding: 6px ;
+    font-size: 14px;
+    outline: 10px;
+     height: 40px; 
+     width: 100%; 
+     transition: (0.7);
+     
+     border-radius: 8px;
+     border:1px solid #d1d1d1;
+ } 
+ .sex-customer-1{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 2px 0px 10px 20px;
+    background-color: #f1ecec;
+   } 
+    input[type="checkbox"]:checked{
+        transform: scale(0.7);
+        box-shadow: 0 0 0 5px white, 0 0 0 5px black;
+        appearance: none;
+        background-color: #06db2a;
+        padding: 6px ;
+       width: 1.15em;
+        box-sizing: border-box;
+       border: 1px none solid; 
+    }
+ 
+ 
+    .use-icon-1{
+        background-image: url('dissale\ .jpeg');
+        background-size: cover;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+    }
+    
+.nhap-tab-1{
+    background-color: #f1ecec;
+    padding: 20px 0px 10px 20px;
+}
+.deal-all{
+    overflow: hidden;
+    padding: 15px 30px 10px;
+    box-shadow: 0px 4px gainsboro;
+}
+
+.deal-giamgia
+{
+    display: flex;
+    width: 256px;
+    height: 40px;
+    border: 2px solid #f5eef2;
+    color: #06db2a;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center
+    
+}
+.deal-1>input[type="text"]:focus{
+    border: 1px green solid;
+}
+.deal-1>input[type="text"]{
+    width: 490px;
+    height: 40px;
+    border: 0px solid none;
+    outline: 10px;
+    border-radius: 8px;
+     border:1px solid #d1d1d1;
+}.deal-0{
+    background: #f5f5f7;
+}
+.but-1-deal:hover{
+    background: #4cb551 ;
+}
+.but-1-deal{
+    width: 20% ;height: 40px; border: 1px solid #bdbdbd;
+    background: #bdbdbd;
+    color: #fff;}
+    .but-2-deal
+    {
+        display: block;
+    overflow: hidden;
+    color: #e3ebe7;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    background: #4cb551;
+    margin: 10px auto;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+       
+    }
+    .tongtien-1-2{
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0 15px;
+        border-top: 1px solid #f1f1f1;
+        align-items: center;
+    }
+    .tongtien-1-3{display: flex;
+    justify-content: space-between;
+    padding: 12px 0 15px;
+    border-top: 1px solid #f1f1f1;
+    align-items: center;}
+    .cuoi-tong-tien{
+        font-size: 12px;
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    

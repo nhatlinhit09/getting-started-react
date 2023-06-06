@@ -27,7 +27,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .icon {
   padding: 20px;
   background-image: url('icon.png');
-  background-size: cover;
+  background-size: cover; 
 }
 
 .input-field {

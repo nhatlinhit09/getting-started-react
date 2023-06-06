@@ -9,20 +9,21 @@ body{
     outline: none;
 }
 /* header background */
-header{
+/* .header{
     padding-bottom: 15px;
-    background: #179b1e;
-    width: 100%;
-}
+    background: #179b1e; */
+    /* width: 100%; */
+/* } */
 /* 3 class con cua than header  */
 /*  */
 /*  */
-.header .verLsmh{
-max-width: 1200px;
+.header {
+/* max-width: 1200px; */
 margin: auto;
-min-width: 1024px;
-height: 110px;
-width: 100%;
+background: #4cb551;
+/* min-width: 1024px;
+height: 110px; */
+/* width: 100%; */
 padding:12px 0;
 }
 .bg-search
@@ -37,6 +38,9 @@ padding:12px 0;
     position: relative;
     overflow: hidden;
 }
+.header__top{
+    background: #FFC565;
+}
 /*  */
 /*  */
 /* Khu Vuc Div con cua */
@@ -46,50 +50,156 @@ padding:12px 0;
 /* head */
 .head {
     display: flex;
-    /* justify-content: space-between; */
-    padding: 0 0 10px;
-    position: relative;
-    align-items: center;
+    width: 100%;
+     /* justify-content: space-between;  */
+    /* padding: 0 0 10px;
+    position: relative; */
+    /* align-items: center; */
 }
 /* the con cua head */
 .logoak{
     width: 154px;
-    /* height: 40px;
-    width: 153px; */
+     height: 40px;
+    /* width: 153px;  */
     /* background-position: 0 0; */
 }
-.iconak-logoak{
-    background-image: url('logoankhang.png');
+.iconak-logoak {
     background-repeat: no-repeat;
+    background-image: url('icon-ankhang-desktop.png') ;
     display: inline-block;
-    /* line-height: 30px; */
-    background-size: cover;
-    height: 40px;
-    width: 153px;
+    line-height: 30px;
     vertical-align: middle;
- 
+    background-size: 393px 440px;
+	width: 153px;
+	height: 40px;
 }
 .location{
-     width: 16%;
-     text-overflow: clip;
     
-    border: 3px solid gray;
+    width: 130px;
    display: inline-block;
     border-radius: 4px;
     color: white;
-    padding :5px 8px;
+    background: #309c3e;
+    /* padding :5px 8px; */
+    height: 40px;
 }
-a .location span{}
+/* a .location span{} */
 .iconak-localhead{
-    background-image: url('iconak-location.png');
-    /* line-height: 30px; */
+    background-position: -158px 0;
+    background-image: url('icon-ankhang-desktop.png');
+     /* line-height: 30px;  */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 393px 440px;
     display: inline-block;
-    width: 20px;
-    height: 17px;
-    vertical-align: middle;
-    /* background-position: -158px 0; */
+    width: 17px;
+    height: 20px;
+    /* vertical-align: middle; */
+   
+}
+input[type="text"]:hover{
+    background: rgb(235, 235, 231);
+    /* border: 0.3px white none; */
+}
+.search{
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px green none  ;
+    background-color: white ;
+    margin-left: 10px;
+}
+input[type="text"]
+{  
+   padding: 10px 10px 10px;
+     outline: 10px;
+    border: 0px white none;
+    border-radius: 6px;
+    width: 350px;
+    height: 30px;
 }
 
+.iconak-search{
+    background-position: -183px -2px;
+    background-image: url('icon-ankhang-desktop.png');
+    background-size: 393px 440px;
+    background-repeat: no-repeat;
+    display: inline-block;
+     vertical-align: middle; 
+    width: 18px;
+    height: 19px;
+}
+/* chua icon shop cart */
+.header__cart {
+    position: relative;
+    background: #309c3e;
+    border-radius: 4px;
+    /* margin-left: 10px; */
+     padding: 4px ;
+    display: flex;
+    margin-right: 10px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    height: 42px;
+    width:130px;
+}
+.header__cart  span{
+    min-width: 14px;
+    position:absolute;
+    border-radius: 45px;
+    font-size: 9px;
+    background: rgb(238, 237, 236);
+    bottom: 0;
+    left: 18px;
+    padding: 0 2px;
+    line-height: 20px;
+}
+/* chua icon shop cart */
+
+.iconak-cart{
+    background-position: -211px -1px;
+    background-image: url('icon-ankhang-desktop.png');
+    background-size: 393px 440px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 28px;
+    width: 29px;
+}
+/* hien thi tien gio hang headder */
+.header__cart-money{
+    padding: 3px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #f8f9fa;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+}
+header__cart-icon{
+    margin:20px;
+}
+/* chon 1 hang */
+.bor1{
+    width: 25px;
+    height: 25px;
+    box-shadow: 10px;
+    border: 0px solid;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+}
+.login-lsmh{
+    border-radius: 4px;
+    background-color: #309c3e;
+    display: flex !important;
+    width: 110px;
+}
+.iconak-lsmh{
+    background-position: -337px -314px;
+    background-image: url('icon-ankhang-desktop.png');
+    background-size: 393px 440px;
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    
+}
 /* .main-menu */

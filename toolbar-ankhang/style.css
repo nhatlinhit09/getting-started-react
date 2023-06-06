@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 14px/18px Arial,Helvetica,sans-serif;
+    color: #333;
+    outline: none;
+}
+/* header background */
+header{
+    padding-bottom: 15px;
+    background: #179b1e;
+    width: 100%;
+}
+/* 3 class con cua than header  */
+/*  */
+/*  */
+.header .verLsmh{
+max-width: 1200px;
+margin: auto;
+min-width: 1024px;
+height: 110px;
+width: 100%;
+padding:12px 0;
+}
+.bg-search
+
+/* 3 class nam trong header_top  -- header__banner owl-carousel owl-loaded owl-drag --- Khu vuc div lon con cua div header_top */
+.header__banner .owl-carousel .owl-loaded .owl-drag{}
+
+/* 3 div lon nam trong  header__banner .owl-carousel .owl-loaded .owl-drag  la owl-stage-outer */
+.owl-stage-outer{
+}
+.owl-carousel .owl-stage-outer{
+    position: relative;
+    overflow: hidden;
+}
+/*  */
+/*  */
+/* Khu Vuc Div con cua */
+/*  */
+/* .header .verLsmh cac the class nam trong 2 class lon head va main-menu*/
+/* 2 class head va main menu */
+/* head */
+.head {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0 0 10px;
+    position: relative;
+    align-items: center;
+}
+/* the con cua head */
+.logoak{
+    width: 154px;
+    /* height: 40px;
+    width: 153px; */
+    /* background-position: 0 0; */
+}
+.iconak-logoak{
+    background-image: url('logoankhang.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    /* line-height: 30px; */
+    background-size: cover;
+    height: 40px;
+    width: 153px;
+    vertical-align: middle;
+ 
+}
+.location{
+     width: 16%;
+     text-overflow: clip;
+    
+    border: 3px solid gray;
+   display: inline-block;
+    border-radius: 4px;
+    color: white;
+    padding :5px 8px;
+}
+a .location span{}
+.iconak-localhead{
+    background-image: url('iconak-location.png');
+    /* line-height: 30px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    vertical-align: middle;
+    /* background-position: -158px 0; */
+}
+
+/* .main-menu */

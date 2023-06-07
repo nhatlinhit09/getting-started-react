@@ -9,24 +9,47 @@ body{
     outline: none;
 }
 /* header background */
-/* .header{
-    padding-bottom: 15px;
-    background: #179b1e; */
-    /* width: 100%; */
-/* } */
+
+/* */
 /* 3 class con cua than header  */
 /*  */
 /*  */
-.header {
-/* max-width: 1200px; */
-margin: auto;
-background: #4cb551;
-/* min-width: 1024px;
-height: 110px; */
-/* width: 100%; */
-padding:12px 0;
+header{
+        /* padding-bottom: 15px; */
+        width: 100%;
+        background: #4cb551;
+        
 }
-.bg-search
+.header {
+    margin: auto;
+    width:  100%;
+    max-width: 1200px;
+    min-width: 1024px;
+    /* height: 110px; */
+    padding:15px 0;
+    background: #4cb551;
+
+}
+/* an link tim kiem */
+.bg-search{
+
+    position: fixed;
+    top:110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgb(160, 156, 156);
+    opacity: 3;
+    z-index: 3;
+    display: none;
+}
+ .bg-search:focus .search>input[type="text"]
+{
+display: block;
+background: #309c3e;
+
+}
 
 /* 3 class nam trong header_top  -- header__banner owl-carousel owl-loaded owl-drag --- Khu vuc div lon con cua div header_top */
 .header__banner .owl-carousel .owl-loaded .owl-drag{}
@@ -51,17 +74,17 @@ padding:12px 0;
 .head {
     display: flex;
     width: 100%;
-     /* justify-content: space-between;  */
-    /* padding: 0 0 10px;
-    position: relative; */
-    /* align-items: center; */
+    padding: 10px;
+      justify-content: space-between; 
+     /* padding: 0 0 10px; */
+    position: relative; 
+     align-items: center; 
 }
 /* the con cua head */
 .logoak{
     width: 154px;
      height: 40px;
-    /* width: 153px;  */
-    /* background-position: 0 0; */
+  
 }
 .iconak-logoak {
     background-repeat: no-repeat;
@@ -80,25 +103,22 @@ padding:12px 0;
     border-radius: 4px;
     color: white;
     background: #309c3e;
-    /* padding :5px 8px; */
+ 
     height: 40px;
 }
 /* a .location span{} */
 .iconak-localhead{
     background-position: -158px 0;
     background-image: url('icon-ankhang-desktop.png');
-     /* line-height: 30px;  */
     background-repeat: no-repeat;
     background-size: 393px 440px;
     display: inline-block;
     width: 17px;
     height: 20px;
-    /* vertical-align: middle; */
-   
 }
 input[type="text"]:hover{
     background: rgb(235, 235, 231);
-    /* border: 0.3px white none; */
+   
 }
 .search{
     width: 400px;
@@ -133,7 +153,7 @@ input[type="text"]
     position: relative;
     background: #309c3e;
     border-radius: 4px;
-    /* margin-left: 10px; */
+  
      padding: 4px ;
     display: flex;
     margin-right: 10px;
@@ -149,10 +169,10 @@ input[type="text"]
     border-radius: 45px;
     font-size: 9px;
     background: rgb(238, 237, 236);
-    bottom: 0;
+    bottom: 6;
     left: 18px;
     padding: 0 2px;
-    line-height: 20px;
+    line-height: 13px;
 }
 /* chua icon shop cart */
 
@@ -179,27 +199,174 @@ header__cart-icon{
     margin:20px;
 }
 /* chon 1 hang */
-.bor1{
+/* .bor1{
     width: 25px;
     height: 25px;
     box-shadow: 10px;
     border: 0px solid;
+    color:white ;
     border-radius: 20px;
     background-color: #f8f9fa;
-}
+} */
 .login-lsmh{
+    align-items: center;
     border-radius: 4px;
     background-color: #309c3e;
     display: flex !important;
+    margin-right: 10px;
+    min-width: 110px;
+    padding: 5px 6px;
     width: 110px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
 }
 .iconak-lsmh{
     background-position: -337px -314px;
     background-image: url('icon-ankhang-desktop.png');
     background-size: 393px 440px;
     display: inline-block;
-    width: 22px;
+    width: 32px;
     height: 24px;
     
 }
+.hotline-head{
+    display: inline-block;
+    text-align: center;
+}
+.hotline-head span{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    color:rgb(245, 243, 238);
+}
+.hotline-head a{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    color:#ffd63a;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 600;
+}
 /* .main-menu */
+.main-menu{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.main-menu .cate-menu{
+    display: block;
+    padding: 0 0 16px;
+    margin: 0 3px;
+    position: relative;
+}
+strong{
+    display: block;
+    overflow: hidden;
+    color: #fff;
+    font-size: 13px;
+    /* line-height: 14px;
+    padding: 16px 0 0; */
+    /* text-transform: uppercase;
+    cursor: pointer;
+    content: ''; */
+}
+.main-menu .list-medict{
+    display: none;
+    padding: 20px 0;
+    position: absolute;
+     /* top :35px;
+    left: -40px; */
+    width: 390px; 
+    background: rgb(231, 236, 231);
+    border-radius: 12px;
+    /* z-index: 3; 
+    padding: 0 0 20px; */
+    box-shadow: 0 4px 4px rgba(0 , 0 ,0 ,.25);
+}
+.cate-menu{
+
+}
+.main-menu:hover .list-medict{
+    display:block;
+    background-color: rgb(241, 248, 239);
+
+}
+ .list-medict li:hover{
+    background-color : #c9d1cb   ;
+}  
+.list-medict a{
+    text-decoration: none;
+  
+}
+.list-medict li span{
+    display: block;
+    overflow: hidden;
+    color: #222;
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+.cate-menu strong{
+    display:  block;
+    overflow: hidden;
+    color: #fff;
+    font-size: 13px;
+    line-height: 14px;
+    padding: 16px 0 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.iconak-gocskhoe{
+    background-image: url('icon-ankhang-desktop.png');
+    background-position: -344px 0;
+    background-size: 393px 440px;
+    display: inline-block;
+    height: 17px;
+    width: 13px;
+}
+.cate-menu-store{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.cate-menu-store >span {
+  
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+.cate-menu-store {
+display: inline-block;
+vertical-align: middle;
+margin-right: 2px;}
+ul{
+    list-style: none;
+}
+.root-cate-1{
+    display: flex;
+    height: 40px;
+    width: 168px;
+    margin: 0 4px 4px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.root-cate-sk{
+    text-align: center;
+}
+
+
+.icon-gocsk1{
+    background-image:url('icon-ankhang-desktop.png');
+    background-position: -200px -198px;
+    background-size: 393px 440px;
+    display: inline-block;
+    width: 96px;
+    height: 12px;
+}

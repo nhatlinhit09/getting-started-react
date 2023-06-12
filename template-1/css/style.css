@@ -17,6 +17,7 @@ body{
     top:0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 #nav>li {
     display: inline-block;
@@ -155,11 +156,12 @@ ul li{
     list-style: none;
 }
 #content{
+   
     /* height: 1000px;
     background-color: #eb4716; */
 }
 #slider{
-    /* position: relative; */
+    position: relative;
      padding-top: 50%; 
     margin-top: 46px;
     background: url('/image/Sakura-Miura-1.jpg') top center/cover no-repeat;
@@ -186,4 +188,39 @@ ul li{
     margin-bottom: 20px;
     font-size: 24px;
     /* line-height: 40px; */
+}
+.text-descritption
+{
+    font-size: 15px;
+}
+#content{
+ background: white;
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    /* chu xa nhau dung letter -spacig */
+    letter-spacing: 6px;
+  
+
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center; 
+    padding: 20px 0 10px 20px; 
+    opacity: 0.6;
+    /* font-style: italic; */
+}
+#content .content-section{
+    max-width: 800px;
+    margin-left: auto;
+    padding: 64px;
+    margin-right: auto;
+}
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;
+    /* do gian dong  */
+    line-height: 1.6;
 }

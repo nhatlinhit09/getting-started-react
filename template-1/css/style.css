@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: rgb(217, 233, 217);
+}
+#header{
+    background-color: black;
+    height: 46px;
+    font-size: 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+#nav>li {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    padding:0 24px;
+}
+#nav li a{
+    display:inline-block;       
+    text-decoration: none;
+    line-height: 40px;
+    color:white;
+    /* padding: 0px 24px; */
+}   
+#nav a:hover {
+    background-color: rgba(202, 175, 24, 0.76);
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    width: 100%;
+    
+}
+#nav{
+    display: inline-block;
+    /* text-transform: uppercase; */
+    line-height: 10px;
+    /* text-transform: uppercase; */
+}
+#nav .subnav{
+    /* width: 400px;
+    display: inline-block; */
+}
+.subnav{
+    display: none;
+    font-size: 10px;
+    
+}
+.subhx{
+    
+    position: relative;
+}
+
+/* .subnav:hover a{
+    /* background: rgb(151, 146, 135); */
+
+ /* .subnav li:hover{
+    background: rgb(133, 145, 133);
+    transform: 0.1s;
+    
+}  */ 
+ .subnav >li{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(78, 76, 76);
+    color: black;
+    box-shadow: 0 0 5px green; 
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.icon-more{
+    background-image: url('../image/icon-ankhang-desktop.png');
+    background-position: -308px 0px;
+    background-size: 393px 440px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 18px;
+    margin: 0 10px;
+}
+.subhx:hover .subnav{
+    display: block;
+     position: absolute; 
+}
+/* .icon-search{
+    width: 236px;
+    height: 50px;
+} */
+.icon-search{
+    float: right;
+    height: 36px;
+    width: 265px;
+    padding: 10px;
+    background: goldenrod;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+  
+}
+/* .icon-search:hover {
+    background-color: red;
+   
+} */
+.icon-search>input[type="text"]:focus{
+    border: #eb4716 1px solid;
+   /* background: rgb(213, 255, 205);
+   box-shadow: 5px green; */
+}
+.icon-search > input[type="text"]{
+    padding: 6px ;
+    font-size: 14px;;
+     height: 26px; 
+     outline: 10px;
+     width: 192px; 
+     transition: (0.7);
+     border-radius: 6px;
+     /* border:1px solid #d1d1d1; */
+}
+.btn-research:hover{
+    background: rgb(100, 202, 69);
+}
+.btn-research{
+width: 36px;
+height: 26px;
+border-radius: 4px;
+background: rgb(124, 128, 119);
+text-align: center;
+display: inline-block;
+justify-content: center;
+
+}
+.hticon-search{
+    float: right;
+    /* ..// */
+    background-image: url('../image/icon-ankhang-desktop.png');
+    background-size: 393px 440px;
+    width: 24px;
+    height: 15px;
+    background-position: -325px -108px;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+}
+ul li{
+    list-style: none;
+}
+#content{
+    /* height: 1000px;
+    background-color: #eb4716; */
+}
+#slider{
+    /* position: relative; */
+     padding-top: 50%; 
+    margin-top: 46px;
+    background: url('/image/Sakura-Miura-1.jpg') top center/cover no-repeat;
+    /* gia tri chieu ngang cua chinh no */
+    /* display: flex;
+    justify-content: center; */
+}
+ .text-content
+{   
+    width: 100%;
+    text-align: center ;
+    font-weight: 600;
+    color: aliceblue;
+    /* font-weight tu 100-1000 */
+    /* left:0;
+    right: 0; */
+    /* position: absolute;
+    color: rgb(248, 247, 244);
+    bottom: 47px;
+    text-align: center; */
+}
+.text-heading{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 24px;
+    /* line-height: 40px; */
+}

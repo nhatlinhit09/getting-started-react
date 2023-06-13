@@ -1,83 +1,99 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-html{
+
+/* dung de clear float */
+.clear {
+    clear: both;
+}
+
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background: rgb(217, 233, 217);
 }
-#header{
+
+#header {
     background-color: black;
     height: 46px;
     font-size: 20px;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1;
 }
+
 #nav>li {
     display: inline-block;
     color: white;
     text-transform: uppercase;
-    padding:0 24px;
+    padding: 0 24px;
 }
-#nav li a{
-    display:inline-block;       
+
+#nav li a {
+    display: inline-block;
     text-decoration: none;
     line-height: 40px;
-    color:white;
+    color: white;
     /* padding: 0px 24px; */
-}   
+}
+
 #nav a:hover {
     background-color: rgba(202, 175, 24, 0.76);
     color: rgb(8, 8, 8);
     cursor: pointer;
     width: 100%;
-    
+
 }
-#nav{
+
+#nav {
     display: inline-block;
     /* text-transform: uppercase; */
     line-height: 10px;
     /* text-transform: uppercase; */
 }
-#nav .subnav{
+
+#nav .subnav {
     /* width: 400px;
     display: inline-block; */
 }
-.subnav{
+
+.subnav {
     display: none;
     font-size: 10px;
-    
+
 }
-.subhx{
-    
+
+.subhx {
+
     position: relative;
 }
 
 /* .subnav:hover a{
     /* background: rgb(151, 146, 135); */
 
- /* .subnav li:hover{
+/* .subnav li:hover{
     background: rgb(133, 145, 133);
     transform: 0.1s;
     
-}  */ 
- .subnav >li{
+}  */
+.subnav>li {
     width: 150px;
     height: 30px;
     background-color: rgb(78, 76, 76);
     color: black;
-    box-shadow: 0 0 5px green; 
+    box-shadow: 0 0 5px green;
     display: inline-block;
     border-radius: 5px;
     cursor: pointer;
-} 
-.icon-more{
+}
+
+.icon-more {
     background-image: url('../image/icon-ankhang-desktop.png');
     background-position: -308px 0px;
     background-size: 393px 440px;
@@ -87,17 +103,19 @@ body{
     height: 18px;
     margin: 0 10px;
 }
-.subhx:hover .subnav{
+
+.subhx:hover .subnav {
     display: block;
-     position: absolute; 
+    position: absolute;
 }
+
 /* .icon-search{
     width: 236px;
     height: 50px;
 } */
-.icon-search{
+.icon-search {
     float: right;
-    height: 36px;
+    height: 46px;
     width: 265px;
     padding: 10px;
     background: goldenrod;
@@ -106,41 +124,46 @@ body{
     align-items: center;
     flex-wrap: wrap;
     align-content: space-around;
-  
+
 }
+
 /* .icon-search:hover {
     background-color: red;
    
 } */
-.icon-search>input[type="text"]:focus{
-    border: #eb4716 1px solid;
-   /* background: rgb(213, 255, 205);
-   box-shadow: 5px green; */
-}
-.icon-search > input[type="text"]{
-    padding: 6px ;
-    font-size: 14px;;
-     height: 26px; 
-     outline: 10px;
-     width: 192px; 
-     transition: (0.7);
-     border-radius: 6px;
-     /* border:1px solid #d1d1d1; */
-}
-.btn-research:hover{
-    background: rgb(100, 202, 69);
-}
-.btn-research{
-width: 36px;
-height: 26px;
-border-radius: 4px;
-background: rgb(124, 128, 119);
-text-align: center;
-display: inline-block;
-justify-content: center;
+.icon-search>input[type="text"]:focus {
+    border: #6dc752 1.5px solid;
 
 }
-.hticon-search{
+
+.icon-search>input[type="text"] {
+    padding: 6px;
+    font-size: 14px;
+    ;
+    height: 26px;
+    outline: 10px;
+    width: 192px;
+    transition: (0.7);
+    border-radius: 6px;
+    border: 0px solid #d1d1d1;
+}
+
+.btn-research:hover {
+    background: rgb(100, 202, 69);
+}
+
+.btn-research {
+    width: 36px;
+    height: 26px;
+    border-radius: 4px;
+    background: rgb(124, 128, 119);
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.hticon-search {
     float: right;
     /* ..// */
     background-image: url('../image/icon-ankhang-desktop.png');
@@ -152,27 +175,30 @@ justify-content: center;
     background-repeat: no-repeat;
 
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-#content{
-   
+
+#content {
+
     /* height: 1000px;
     background-color: #eb4716; */
 }
-#slider{
+
+#slider {
     position: relative;
-     padding-top: 50%; 
+    padding-top: 50%;
     margin-top: 46px;
     background: url('/image/Sakura-Miura-1.jpg') top center/cover no-repeat;
     /* gia tri chieu ngang cua chinh no */
     /* display: flex;
     justify-content: center; */
 }
- .text-content
-{   
+
+.text-content {
     width: 100%;
-    text-align: center ;
+    text-align: center;
     font-weight: 600;
     color: aliceblue;
     /* font-weight tu 100-1000 */
@@ -183,44 +209,342 @@ ul li{
     bottom: 47px;
     text-align: center; */
 }
-.text-heading{
+
+.text-heading {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 24px;
     /* line-height: 40px; */
 }
-.text-descritption
-{
+
+.text-descritption {
     font-size: 15px;
+    padding-bottom: 40px;
 }
-#content{
- background: white;
+
+#content {
+    background: white;
 }
-#content .section-heading{
+
+#content .section-heading {
     font-size: 30px;
     text-align: center;
     font-weight: 500;
     /* chu xa nhau dung letter -spacig */
     letter-spacing: 6px;
-  
+
 
 }
-#content .section-sub-heading{
+
+#content .section-sub-heading {
     font-size: 15px;
-    text-align: center; 
-    padding: 20px 0 10px 20px; 
+    text-align: center;
+    padding: 20px 0 10px 20px;
     opacity: 0.6;
     /* font-style: italic; */
 }
-#content .content-section{
+
+#content .content-section {
     max-width: 800px;
     margin-left: auto;
     padding: 64px;
     margin-right: auto;
 }
-#content .about-text{
+
+#content .about-text {
     font-size: 15px;
     text-align: justify;
     /* do gian dong  */
     line-height: 1.6;
 }
+
+#content .menber-img {
+    width: 154px;
+    height: 153px;
+    /* text-align: center; */
+    border-radius: 4px;
+}
+
+#content .member-item {
+    margin-top: 46px;
+    padding: 0 20px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    /* khac phuc float left */
+    overflow: hidden;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin-top: 15px 0 15px;
+    /* text-align: center; */
+}
+
+/* tour-section */
+.tour-section {
+    background: black;
+    color: rgb(245, 189, 85);
+}
+
+.ticket-list {
+    background: white;
+    color: black;
+    margin: 50px;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    padding: 12px 16px;
+    opacity: 0.6;
+    border-bottom: 1px solid gray;
+
+
+}
+
+.ticket-list .sold-out {
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+
+.ticket-list .quantify {
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    line-height: 24px;
+    /* di theo the float moi dung dc margin - */
+    margin: -3px;
+}
+
+.places-list {
+
+    margin-left: 43px;
+    margin-right: 40px;
+    color: rgb(8, 8, 8);
+    padding-bottom: 42px;
+}
+
+.place-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+
+
+}
+
+.place-bodyS>b {
+    text-align: center;
+}
+
+.place-img {
+    width: 100%;
+    height: 281px;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.3;
+}
+
+.place-time {
+    opacity: 0.6;
+    line-height: 24px;
+}
+
+.place-bodyS {
+    padding: 10px 10px 20px;
+    background: white;
+}
+
+.placedesc {
+    font-size: 15px;
+    margin: 10px 0 20px;
+}
+
+.place-buy-bt:hover {
+    background: grey;
+    color: black;
+}
+
+.place-buy-bt {
+    padding: 8px 16px;
+    margin: 0 0 16px;
+    color: white;
+    background: black;
+    text-decoration: none;
+
+}
+
+/* footer */
+/*  */
+/* modal */
+.modal {
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background: rgba(0, 0,0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container{
+    width: 900px;
+    /* max-width: calc(100%-32px); */
+    min-height: 200px;
+    background: white;
+    color: #080808;
+    position: relative;
+}
+.modal-header{
+    height:130px;
+    font-size:30px;
+    background-color: rgb(14 44 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.icon-modal-header{
+    background-image: url('../image/icon-ankhang-desktop.png');
+    background-position: -343px -235px;
+    background-size: 393px 440px;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 33px;   
+}
+.icon-close-modal{
+    position: absolute;
+    right:0;
+    padding:10px;
+    top:0;
+    cursor: pointer;
+
+}
+.icon-close-modal{
+    background-image: url('../image/icon-ankhang-desktop.png');
+    background-position: -327px -65px;
+    background-size: 393px 440px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    
+
+}
+.icon-modal-body{
+    background-image: url('../image/icon-ankhang-desktop.png');
+    background-position: -211px -99px;
+    background-size: 393px 440px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px; 
+    display: inline-block;
+}
+.icon-modal-body-1{
+    background-image: url('../image/icon-ankhang-desktop.png');
+    background-position: -271px -120px;
+    background-size: 393px 440px;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 15px; 
+    display: inline-block;
+}
+.modal-lable {
+   
+    padding: 8px; 
+   
+     display: block;
+     
+}
+/* .style-close-modal{
+    right: 0;
+    top:0;
+    color: #f7f0f0;
+    position: absolute;
+   
+} */
+.modal-close{
+    padding: 8px;
+    /* right:0;
+   padd
+    color: #f7f0f0;
+    position: absolute; */
+}
+.modal-btn-pay{
+    width: 100%; 
+     padding: 16px;
+     margin-top: 15px;
+     background: rgb(22, 97, 116);
+     color:white;
+     text-align: center;
+     cursor: pointer;
+}
+.icon-modal-pay{
+    line-height: 1.3;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.icon-modal-pay{
+    background:url('../image/icon-ankhang-desktop.png') no-repeat -325px -128px;
+    background-size: 393px 440px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.modal-input{
+    width:100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+     outline: 10px; 
+     font-size: 15px;    
+} 
+.modal-input:focus
+{
+    border: 1px solid green;
+}
+.modal-btn-pay:hover{
+    background:rgb(96, 167, 55);
+    color:black;
+
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-btn-close{
+    margin:16px 0;
+    padding:8px 16px;
+    background-color: rgb(92, 86, 86);
+    border: 0 solid;
+    color: white;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.icon-modal-close{
+    background: url('../image/icon-ankhang-desktop.png') no-repeat -327px -65px;
+    display: inline-block;
+	background-size: 393px 440px;
+	width: 11px;
+	height: 11px;
+}
+.modal-btn-close:hover{
+    background: rgb(233, 14, 14);
+    color: black;
+}
+.modal-help{
+    float:right;
+    margin-bottom: 10px;
+}
+/*  */

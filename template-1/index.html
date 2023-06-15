@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="css/style.css">
+    <link href="http://yoursite.com/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/themify-icons-font/themify-icons/themify-icons.css">
     <!-- <link rel="stylesheet" href="image"> -->
     <title>Sakura_Miura</title>
 
@@ -20,7 +22,7 @@
                 <li><a href="">Contact</a></li>
                 <li class="subhx">
                     <a>
-                        <Strong>More</strong><i class="icon-more"></i>
+                        <Strong>More</strong><i class="ti-angle-down"></i>
                         <ul class="subnav">
                             <li><a>MerChanDise</a></li>
                             <li><a>Extras </a></li>
@@ -136,7 +138,7 @@
                                 <p class="placedesc">
                                     Cha vợ ân cần và người chồng bất lực.
                                 </p>
-                                <a href="#" class="place-buy-bt">Buy Ticket</a>
+                                <button class="place-buy-bt js-buy-ticket">Buy DVD</button>
                             </div>
 
                             <!-- end place-item -->
@@ -151,7 +153,7 @@
                                 <p class="placedesc">
                                     Cô gái suy tình và anh học trò .
                                 </p>
-                                <a href="#" class="place-buy-bt">Buy Ticket</a>
+                                <button class="place-buy-bt js-buy-ticket">Buy DVD</button>
                             </div>
 
                             <!-- end place-item -->
@@ -164,9 +166,9 @@
                                     Mon 1 Sept 2023
                                 </p>
                                 <p class="placedesc">
-                                    Học sinh dạy bơi và thầy giáo .
+                                    Học sinh tập bơi và thầy giáo tà dâm .
                                 </p>
-                                <a href="#" class="place-buy-bt">Buy Tickets</a>
+                                <button class="place-buy-bt js-buy-ticket">Buy DVD</button>
                             </div>
 
                             <!-- end place-item -->
@@ -187,49 +189,91 @@
                 <p class="section-sub-heading">
                     <i>Fan? drob a note</i>
                 </p>
-
-                <!-- end tuour -->
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                       <p> <i class="ti-location-pin"></i>Chicago,US</p>
+                       <p><i class="ti-mobile"></i>Phone:+00151515</p>
+                       <p><i class="ti-email"></i>Email:email@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <div action="">
+                            <div class="row">
+                           <div class="col col-half">
+                            <input type="text" placeholder="Name" required class="form-control">
+                           </div>
+                           <div class="col col-half">
+                            <input type="email" placeholder="Email" required  class="form-control">
+                           </div>
+                        </div>
+                           <div class="row mt-8">
+                            <div class="col col-full">
+                                <input type="text" placeholder="Message" required  class="form-control">
+                            </div>
+                           </div>
+                           <input  class="place-buy-bt modal-help mt-8" type="submit" value="send">
+                        </form>
+                    </div>
+                </div>
+                <!-- end contact -->
             </div>
             <!-- pc conten  -->
         </div>
+            <!-- End Contact section -->
+
+            <!--  Map section -->
+            <div class="map-section">
+                <img src="image/Sakura Miura.jpg"  alt="sakura miura">
+            </div>
+            <!-- begin footer -->
         <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/"><i class="ti-facebook"> </i></a>
+                <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-flickr-alt"></i></a>
+                <a href="https://www.pinterest.com/"><i class="ti-pinterest"></i></a>
+                <a href="https://twitter.com/"><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <div class="footer-end">
+                <p>Power by <a href="#">NLinh</a></p>
+            </div>
             <!-- ranhn gioi  footer -->
         </div>
         <!-- ranh roi cua main -->
     </div>
     <!-- day la modal form -->
-    <div class="modal">
-        <div class="modal-container">
-            <div class="model-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="model-close js-modal-close">
                 <i class="icon-close-modal"></i>
             </div>
             <!-- the dong -->
             <header class="modal-header">
                 <i class="icon-modal-header" style=" float:right">
                 </i>
-                Ticket
+                DVD
             </header>
             <div class="modal-body">
 
                 <lable for="ticket-quantify" class="modal-lable">
                     <i class="icon-modal-body">
                     </i>
-                    Tickets: 990$ per DVD
+                    Price: 9999 man/DVD
                 </lable>
-                <input id="ticket-quantify" type="text" class="modal-input" placeholder="how many?">
+                <input id="ticket-quantify" type="text" class="modal-input" required placeholder="how many?">
                 <!-- end tickets -->
                 <!-- sento -->
                 <lable class="modal-lable">
                     <i class="icon-modal-body-1">
                     </i>
-                   Send to
+                   Send to:
                 </lable>
-                <input type="email" class="modal-input" placeholder="Enter Email...?">
+                <input type="email" class="modal-input" required  placeholder="Enter Email...?">
                 <!-- end sento -->
                 <button class="modal-btn-pay">PAY
                     <i class="icon-modal-pay"></i>
                 </button>
-                <button class="modal-btn-close">Close
+                <button class="modal-btn-close js-modal-close-1">Close
                     <i class="icon-modal-close"></i>
                 </button>
                 <!-- end modal body -->
@@ -242,6 +286,38 @@
         </div>
         <!-- end modal -->
     </div>
+    <script>
+            // all lay het----selector lay 1 thang 
+            const buyBtns = document.querySelectorAll('.js-buy-ticket')
+           const   modal=document.querySelector('.js-modal')
+           const modalContainer =document.querySelector('.js-modal-container')
+           const modalClose=document.querySelector('.js-modal-close')
+           const modalClosebtn=document.querySelector('.js-modal-close-1')
+        //    hàm hiển thị modal mua (thêm class open và modal)
+           function showBuytickets(){
+               modal.classList.add('open')
+            }
+            //    hàm ẩn modal mua (gơx bỏ class open và modal)
+             function hiddenBuytickets(){
+               modal.classList.remove('open')
+            }
+            //tao 1 bien moi co ten la buyBtn 
+            for(const buyBtn of buyBtns)
+            {
+                // them 1 thang de lang nghe
+                // sao khi click viet ham de xu ly 
+                // lập qua từng thẻ button và nghe
+            buyBtn.addEventListener('click',showBuytickets)
+            }
+            // nghe hành vi vào nút button close
+            modalClose.addEventListener('click',hiddenBuytickets)
+            modalClosebtn.addEventListener('click',hiddenBuytickets)
+            modal.addEventListener('click',hiddenBuytickets)
+            modalContainer.addEventListener('click',function(event)
+            {
+            event.stopPropagation()
+            })
+    </script>
 </body>
 
 </html>

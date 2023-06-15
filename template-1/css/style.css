@@ -44,7 +44,7 @@ body {
 }
 
 #nav a:hover {
-    background-color: rgba(202, 175, 24, 0.76);
+    background-color: rgba(233, 24, 9, 0.76);
     color: rgb(8, 8, 8);
     cursor: pointer;
     width: 100%;
@@ -53,14 +53,12 @@ body {
 
 #nav {
     display: inline-block;
-    /* text-transform: uppercase; */
+
     line-height: 10px;
-    /* text-transform: uppercase; */
+   
 }
 
 #nav .subnav {
-    /* width: 400px;
-    display: inline-block; */
 }
 
 .subnav {
@@ -74,22 +72,13 @@ body {
     position: relative;
 }
 
-/* .subnav:hover a{
-    /* background: rgb(151, 146, 135); */
 
-/* .subnav li:hover{
-    background: rgb(133, 145, 133);
-    transform: 0.1s;
-    
-}  */
 .subnav>li {
-    width: 150px;
-    height: 30px;
+    width: 160px;
+    height: 40px;
     background-color: rgb(78, 76, 76);
     color: black;
-    box-shadow: 0 0 5px green;
-    display: inline-block;
-    border-radius: 5px;
+    transform: 0.3;
     cursor: pointer;
 }
 
@@ -109,16 +98,13 @@ body {
     position: absolute;
 }
 
-/* .icon-search{
-    width: 236px;
-    height: 50px;
-} */
+
 .icon-search {
     float: right;
     height: 46px;
     width: 265px;
     padding: 10px;
-    background: goldenrod;
+    background: rgb(100, 202, 69);
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
@@ -127,12 +113,8 @@ body {
 
 }
 
-/* .icon-search:hover {
-    background-color: red;
-   
-} */
 .icon-search>input[type="text"]:focus {
-    border: #6dc752 1.5px solid;
+    border: #5149c0 1.5px solid;
 
 }
 
@@ -149,14 +131,15 @@ body {
 }
 
 .btn-research:hover {
-    background: rgb(100, 202, 69);
+    background: rgb(223, 17, 10);
 }
 
 .btn-research {
     width: 36px;
     height: 26px;
     border-radius: 4px;
-    background: rgb(124, 128, 119);
+    border:none;
+    background: #080808;;
     text-align: center;
     display: inline-block;
     justify-content: center;
@@ -201,13 +184,7 @@ ul li {
     text-align: center;
     font-weight: 600;
     color: aliceblue;
-    /* font-weight tu 100-1000 */
-    /* left:0;
-    right: 0; */
-    /* position: absolute;
-    color: rgb(248, 247, 244);
-    bottom: 47px;
-    text-align: center; */
+    
 }
 
 .text-heading {
@@ -247,7 +224,7 @@ ul li {
 #content .content-section {
     max-width: 800px;
     margin-left: auto;
-    padding: 64px;
+    padding: 64px 0 112px;
     margin-right: auto;
 }
 
@@ -364,6 +341,7 @@ ul li {
 .place-bodyS {
     padding: 10px 10px 20px;
     background: white;
+    text-align: center;
 }
 
 .placedesc {
@@ -372,15 +350,18 @@ ul li {
 }
 
 .place-buy-bt:hover {
-    background: grey;
+    background: rgb(222, 226, 4);
     color: black;
+    border-radius: 4px;
 }
 
 .place-buy-bt {
     padding: 8px 16px;
     margin: 0 0 16px;
     color: white;
-    background: black;
+    border:none;
+    text-transform: uppercase;
+    background: rgb(216, 18, 18);
     text-decoration: none;
 
 }
@@ -388,6 +369,11 @@ ul li {
 /* footer */
 /*  */
 /* modal */
+.modal.open{
+    display: flex;
+   
+}
+
 .modal {
     position: fixed;
     top:0;
@@ -395,7 +381,7 @@ ul li {
     bottom:0;
     left:0;
     background: rgba(0, 0,0, 0.3);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -406,6 +392,7 @@ ul li {
     background: white;
     color: #080808;
     position: relative;
+    animation: modalFadeIn ease .5s;
 }
 .modal-header{
     height:130px;
@@ -486,10 +473,11 @@ ul li {
     width: 100%; 
      padding: 16px;
      margin-top: 15px;
-     background: rgb(22, 97, 116);
+     background: rgb(12 68 82);
      color:white;
      text-align: center;
      cursor: pointer;
+     border: none;
 }
 .icon-modal-pay{
     line-height: 1.3;
@@ -513,10 +501,10 @@ ul li {
 } 
 .modal-input:focus
 {
-    border: 1px solid green;
+    border: 1px solid rgb(38, 18, 128);
 }
 .modal-btn-pay:hover{
-    background:rgb(96, 167, 55);
+    background:rgb(77, 180, 17);
     color:black;
 
 }
@@ -531,6 +519,7 @@ ul li {
     color: white;
     font-size: 15px;
     line-height: 1.4;
+    cursor: pointer;
 }
 .icon-modal-close{
     background: url('../image/icon-ankhang-desktop.png') no-repeat -327px -65px;
@@ -547,4 +536,83 @@ ul li {
     float:right;
     margin-bottom: 10px;
 }
+/* tao do rong de tao khoang cach giua icon va font */
+.contact-info i[class*="ti-"]
+{
+    width:30px;
+    display: inline-block;
+    line-height: 1.6;
+
+}
+.contact-form .form-control{
+   padding:9px;
+   width: 100%;
+   border: 1px solid #ccc;
+   outline: none;
+
+}
+.row::after{
+    display: block;
+    content:"";
+    clear:both;
+
+}
+.mt-8{
+    margin-top: 8px;
+}
 /*  */
+@keyframes modalFadeIn {
+    from{
+        transform:translateY(-130px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform:translateY(0);
+
+    }
+}
+/* contact */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+.col{
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.contact-content   {
+margin-top:40px;
+}
+.map-section img{
+    width: 100%;
+  
+}
+#footer{
+    background-color: #edf3ec;
+    padding: 64px 16px;
+    text-align: center;
+    justify-content: center;
+   
+}
+#footer .social-list a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #3a3737;
+}
+#footer .social-list a:hover{
+    color: #7c7676;
+}
+.footer-end{
+    font-size: 15px;
+    opacity: 0.6;
+}

@@ -1,3 +1,14 @@
+:root{
+    --dark:#374151;
+    --daker:#1f2937;
+    --darkest:#111827;
+    --light:#eee;
+    --pink:#d82981;
+    --purple:#8b5cf6;
+    --gray:#6b7280;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -173,7 +184,7 @@ ul li {
     position: relative;
     padding-top: 50%;
     margin-top: 46px;
-    background: url('/image/Sakura-Miura-1.jpg') top center/cover no-repeat;
+    background: url('../image/hotgirl-background.jpg') top center/cover no-repeat;
     /* gia tri chieu ngang cua chinh no */
     /* display: flex;
     justify-content: center; */
@@ -191,7 +202,10 @@ ul li {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 24px;
-    /* line-height: 40px; */
+    background-image: linear-gradient(to right,var(--pink),var(--darkest));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+   
 }
 
 .text-descritption {
@@ -256,8 +270,16 @@ ul li {
 }
 
 #content .member-name {
-    font-size: 15px;
+    font-size:20px;
     margin-top: 15px 0 15px;
+    color: red;
+    background-image: linear-gradient(to right, var(--pink) ,var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+
+
     /* text-align: center; */
 }
 

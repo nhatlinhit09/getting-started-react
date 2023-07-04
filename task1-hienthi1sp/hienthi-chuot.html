@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width =device-width, initial-scale=1.0" />
+  </head>
+  <title>CHUOT TO VLXX</title>
+  <body>
+    <div class="container">
+      <div class="product">
+        <div class="gallery">
+          <img src="./image/be tho.jpg" id="productImg" />
+          <div class="controls">
+            <span class="btn active"></span>
+            <span class="btn"></span>
+            <span class="btn"></span>
+          </div>
+        </div>
+        <div class="details">
+          <h1>GIRL</h1>
+          <h2>ALBUM GIRL</h2>
+          <h3>DISCOUNT 30% khi mua 2 album bất kỳ</h3>
+          <form>
+            <div class="size-select">
+              <p>SIZE</p>
+              <label for="small">
+                <input type="radio" name="size" id="small" />
+                <span>S</span>
+              </label>
+              <label for="medium">
+                <input type="radio" name="size" id="medium" />
+                <span>M</span>
+              </label>
+              <label for="large">
+                <input type="radio" name="size" id="large" />
+                <span>L</span>
+              </label>
+              <label for="x-large">
+                <input type="radio" name="size" id="x-large" />
+                <span>XL</span>
+              </label>
+              <label for="xx-large">
+                <input type="radio" name="size" id="xx-large" />
+                <span>XXL</span>
+              </label>
+            </div>
+            <div class="color-select">
+              <p>Color</p>
+              <label for="red">
+                <input type="radio" name="color" id="red" />
+                <span class="color-1"></span>
+              </label>
+              <label for="green">
+                <input type="radio" name="color" id="green" />
+                <span class="color-2"></span>
+              </label>
+              <label for="blue">
+                <input type="radio" name="color" id="blue" />
+                <span class="color-3"></span>
+              </label>
+              <label for="pink">
+                <input type="radio" name="color" id="pink" />
+                <span class="color-4"></span>
+              </label>
+            </div>
+            <div class="quantity-select">
+              <p>Quantity</p>
+              <input type="number" value="1" />
+            </div>
+            <button>Mua Ngay</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let productImgA = document.getElementById("productImg");
+      let Btn = document.getElementsByClassName("btn");
+
+      Btn[0].onclick = function () {
+        productImgA.src = "image/be tho.jpg";
+        for (bt of Btn) {
+          bt.classList.remove("active");
+        }
+        this.classList.add("active");
+      };
+     Btn[1].onclick = function () {
+        productImgA.src = "image/anime.jpg";
+        for (bt of Btn) {
+          bt.classList.remove("active");
+        }
+        this.classList.add("active");
+      };
+      Btn[2].onclick = function () {
+        productImgA.src = "image/kute-tuor.jpg";
+        for (bt of Btn) {
+          bt.classList.remove("active");
+        }
+        this.classList.add("active");
+      };
+    </script>
+  </body>
+</html>

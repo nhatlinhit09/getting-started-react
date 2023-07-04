@@ -112,7 +112,7 @@ div.box {
 .container {
     width: 100%;
     min-height: 100px;
-    background: #d0eaff;
+    background: #0f3756;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,8 +127,8 @@ div.box {
 
 .gallery {
     flex: basis 50%;
-    background: #241e20;
-    transform: scale(1.08);
+    background: #0e0d0d;
+    /* transform: scale(1.08); */
     box-shadow: -10px 5px 10px 10px rgha (0, 0, 0, 0.1);
     position: relative;
 }
@@ -136,7 +136,7 @@ div.box {
 .gallery img {
     width: 100%;
     display: block;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .details {
@@ -152,7 +152,7 @@ div.box {
 }
 
 .details h1 {
-    color: rgb(185, 18, 18);
+    -webkit-text-fill-color: rgb(212, 73, 18);
     font-size: 30px;
 }
 
@@ -176,8 +176,8 @@ div.box {
 
 .size-select {
     display: flex;
-    width: 500px;
-    margin-top: 50px;
+    width: 390px;
+   
 }
 
 .size-select p {
@@ -202,7 +202,7 @@ div.box {
 
 .color-select {
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -259,19 +259,23 @@ div.box {
     border-radius: 12px;
     
 }
+form button:hover {
+    opacity: 0.7;
+    background-color: rgb(240, 29, 29);
+    color: black;
+}
 form button{
-    background: #553ff0;
+     background: #35873b;
     color: #fff;
     /* background-color: #d0eaff; */
-    font-size: 17px;
-    width: 50%;
+    font-size: 15px;
+    width: 60%;
     padding: 10px;
-    border-radius: 30px ;
-    border :0;
+    border-radius: 30px;
+    border: 0;
     outline: 0;
-    margin-top: 10px;
+    margin: 10px;
     cursor: pointer;
-    box-shadow: 0 10px 10px rgba(85, 63 ,240 ,0.25);
 }
 .controls{
     position: absolute;
@@ -288,5 +292,7 @@ form button{
     cursor: pointer;
 }
 .btn.active{
-    background: #553ff0;
+    background: #1c07b6;
 }
+
+/* task hien thi box */
